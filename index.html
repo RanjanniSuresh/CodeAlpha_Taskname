@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Responsive Image Gallery</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1>Moments Captured 📸 </h1>
+    <p class="subtitle">See the world,One pixels at a time</p>
+  </header>
+
+  <main class="container">
+    <section class="controls">
+      <div class="categories" role="toolbar" aria-label="Filter images">
+        <button class="cat-btn active" data-filter="*">All</button>
+        <button class="cat-btn" data-filter="Family">Family</button>
+        <button class="cat-btn" data-filter="My people">My People</button>
+        <button class="cat-btn" data-filter="Myself">Myself</button>
+      </div>
+    </section>
+
+    <section class="gallery" id="gallery">
+   
+      <figure class="item" data-category="Myself">
+        <img src="/images/photo1.jpg.jpg"  loading="lazy">
+      </figure>
+
+      <figure class="item" data-category="Myself">
+        <img src="images/photo2.jpg.jpg"  loading="lazy">
+      </figure>
+
+      <figure class="item" data-category="My people">
+        <img src="/images/IMG-20251102-WA0014.jpg"  loading="lazy">
+      </figure>
+
+      <figure class="item" data-category="My people">
+        <img src="/images/photo4.jpg.jpg"  loading="lazy">
+      </figure>
+
+      <figure class="item" data-category="Family">
+        <img src="/images/photo5.jpg.jpg"  loading="lazy">
+      </figure>
+
+      <figure class="item" data-category="My people">
+        <img src="/images/IMG-20251102-WA0015.jpg" loading="lazy">
+      </figure>
+
+      <figure class="item" data-category="Family">
+        <img src="/images/photo7.jpg" loading="lazy">
+      </figure>
+
+      <figure class="item" data-category="My people">
+        <img src="/images/photo8.jpg"  loading="lazy">
+      </figure>
+
+      <figure class="item" data-category="Myself">
+        <img src="/images/photo9.jpg" loading="lazy">
+      </figure>
+
+      <figure class="item" data-category="Myself">
+        <img src="/images/WhatsApp Image 2025-11-02 at 15.51.46_d2b0a725.jpg"  loading="lazy">
+      </figure>
+
+      <figure class="item" data-category="Myself">
+        <img src="/images/WhatsApp Image 2025-11-02 at 15.51.47_3395562e.jpg" loading="lazy">
+      </figure>
+
+      <figure class="item" data-category="My people">
+        <img src="/images/IMG-20251102-WA0013.jpg"  loading="lazy">
+      </figure>
+
+      <figure class="item" data-category="Family">
+        <img src="/images/IMG-20251102-WA0018.jpg" loading="lazy">
+      </figure>
+
+      <figure class="item" data-category="Myself">
+        <img src="/images/WhatsApp Image 2025-11-02 at 15.57.43_5fb5fddc.jpg" loading="lazy">
+      </figure>
+
+      <figure class="item" data-category="Myself">
+        <img src="/images/WhatsApp Image 2025-11-02 at 15.57.43_6c31ccee.jpg" loading="lazy">
+      </figure>
+
+    </section>
+  </main>
+
+  <div id="lightbox" class="lightbox" aria-hidden="true">
+    <button class="lb-close" aria-label="Close">✕</button>
+    <button class="lb-prev" aria-label="Previous">◀</button>
+    <div class="lb-content" role="dialog" aria-modal="true">
+      <img src="" alt="" id="lb-image">
+      <p id="lb-caption" class="lb-caption"></p>
+    </div>
+    <button class="lb-next" aria-label="Next">▶</button>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
